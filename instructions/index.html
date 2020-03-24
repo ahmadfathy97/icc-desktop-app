@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>التعليمات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icc.png">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="toggle-nav" id="toggle-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-bar" id="nav-bar" data-toggle="hidden">
+        <li class="nav-item"><a href="../index.html">الرئيسية</a></li>
+        <li class="nav-item"><a href="../about/index.html">من نحن</a></li>
+        <li class="nav-item"><a href="../components/index.html">المكونات</a></li>
+        <li class="nav-item active"><a href="./index.html">التعليمات</a></li>
+      </ul>
+    </nav>
+    <h1>التعليمات</h1>
+    <div class="container">
+      <div class="rule">
+        <img src="./images/left-click.png" />
+        <p>لتدوير المجسم اضغط على الزرار الايسر بالفأرة مع السحب في اي اتجاه</p>
+      </div>
+      <div class="rule">
+        <img src="./images/right-click.png" />
+        <p> لتحريك المجسم من مكانه اضغط على الزرار الايمن بالفأرة مع السحب في اي اتجاه او من خلال سهم اليمين واليسار في لوحة المفاتيح</p>
+      </div>
+      <div class="rule">
+        <img src="./images/roller.png" />
+        <p>لتكبير وتصغير المجسم أدر بكرة الفأرة لاعلى للتكبير ولاسفل للتصغير او من خلال سهم اعلى واسفل في لوحة المفاتيح</p>
+      </div>
+    </div>
+    <footer>
+      <p>جميع الحقوق محفوظة &copy; <span id="year"></p>
+    </footer>
+    <div class="load-wrapp" id="load-wrapp">
+      <svg width="0" height="0">
+        <defs>
+          <filter id="filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blured"></feGaussianBlur>
+            <feColorMatrix in="blured" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="weirdNumbers"></feColorMatrix>
+            <feComposite in="SourceGraphic" in2="weirdNumbers" operator="atop"></feComposite>
+          </filter>
+        </defs>
+        <div class="loader">
+          <div class="small-circle"></div>
+          <div class="big-circle"></div>
+        </div>
+      </svg>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>

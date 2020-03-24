@@ -1,0 +1,76 @@
+{
+  "team":[
+    {
+      "name": "أحمد فتحي",
+      "job": "بناء الموقع والبرنامج",
+      "image": "ahmad fathy.jpg",
+      "position": "member"
+    },
+    {
+      "name": "اسامه صالح",
+      "job": "بناء ذاكرة الوصول العشوائي",
+      "image": "osama-saleh.jpg",
+      "position": "member"
+    },
+    {
+      "name": "أحمد عزت",
+      "job": "بناء اللوحة الأم",
+      "image": "ahmad ezzat.jpg",
+      "position": "member"
+    },
+    {
+      "name": "شهاب خالد",
+      "job": "بناء المعالج",
+      "image": "shehab.jpg",
+      "position": "member"
+    },
+    {
+      "name": "سلمى احمد",
+      "job": "بناء مزود الطاقة",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "مشيرة شعبان",
+      "job": "بناء محرك الاقراص الضوئية",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "اسماء رزق",
+      "job": "بناء القرص المرن",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "نورهان محمد",
+      "job": "بناء مروحة النظام",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "إسراء محمود",
+      "job": "بناء مروحة المعالج",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "إسراء عيد",
+      "job": "بناء القرص الصلب",
+      "image": "avatar-girl.png",
+      "position": "member"
+    },
+    {
+      "name": "د/حمدي احمد",
+      "job": "مشرف على المشروع",
+      "image": "DrHamdy.jpg",
+      "position": "supervisor"
+    },
+    {
+      "name": "د/هاني الشيخ",
+      "job": "مشرف على المشروع",
+      "image": "DrHany.jpg",
+      "position": "supervisor"
+    }
+  ]
+}

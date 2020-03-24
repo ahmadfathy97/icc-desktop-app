@@ -1,0 +1,34 @@
+{
+  "name": "icc",
+  "version": "1.0.0",
+  "description": "this application is an offline version of icc website ",
+  "main": "app.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Ahmad Fathy",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^22.2.0",
+    "electron": "^6.0.2"
+  },
+  "build": {
+    "appId": "com.electron.ICC",
+    "productName": "ICC",
+    "copyright": "Copyright © 2020",
+    "win": {
+      "icon": "./assets/icc.png",
+      "legalTrademarks": "ICC",
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    }
+  }
+}

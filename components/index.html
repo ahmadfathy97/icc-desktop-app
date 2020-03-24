@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>المكونات</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/icc.png">
+    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body>
+    <nav class="nav-container">
+      <div class="toggle-nav" id="toggle-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-bar" id="nav-bar" data-toggle="hidden">
+        <li class="nav-item"><a href="../index.html">الرئيسية</a></li>
+        <li class="nav-item"><a href="../about/index.html">من نحن</a></li>
+        <li class="nav-item active"><a href="./index.html">المكونات</a></li>
+        <li class="nav-item"><a href="../instructions/index.html">التعليمات</a></li>
+      </ul>
+    </nav>
+    <h1 id="compHead">المكونات</h1>
+    <h2 class="compName" id="compName"></h2>
+    <div class="container">
+    </div>
+    <div id="obj-container">
+
+    </div>
+    <button class="infoBtn" id="infoBtn">معلومات عن المكون</button>
+
+    <div class="info" id="info">
+      <div class="head">
+        <h2 id="objName"></h2>
+        <span id="closeInfo">X</span>
+      </div>
+      <p id="details"></p>
+    </div>
+
+    <footer>
+      <p>جميع الحقوق محفوظة &copy; <span id="year"></p>
+    </footer>
+
+    <div id="my-gui-container" class="my-gui-container">
+      <button id="toggleControls" data-toggle="hidden">
+        التحكم
+      </button>
+    </div>
+    <div class="readMore-loader" id="readMore-loader">
+      <div class="spinner"></div>
+    </div>
+    <div class="load-wrapp" id="load-wrapp">
+      <svg width="0" height="0">
+        <defs>
+          <filter id="filter">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blured"></feGaussianBlur>
+            <feColorMatrix in="blured" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="weirdNumbers"></feColorMatrix>
+            <feComposite in="SourceGraphic" in2="weirdNumbers" operator="atop"></feComposite>
+          </filter>
+        </defs>
+        <div class="loader">
+          <div class="small-circle"></div>
+          <div class="big-circle"></div>
+        </div>
+      </svg>
+    </div>
+    <div class="comp-load" id="comp-load">
+      <p id="load-percent">0%</p>
+      <div class="bar">
+        <div class="fill"></div>
+      </div>
+    </div>
+    <script src="./js/libs/three.min.js"></script>
+    <script src="./js/libs/MTLLoader.js"></script>
+    <script src="./js/libs/objloader.js"></script>
+    <script src="./js/libs/OrbitControls.js"></script>
+    <script src="./js/libs/dat.min.js"></script>
+    <script src="./js/loadObject.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
