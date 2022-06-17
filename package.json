@@ -11,7 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "electron-builder": "^22.2.0",
-    "electron": "^6.0.2"
+    "electron": "^15.5.5"
   },
   "build": {
     "appId": "com.electron.ICC",
